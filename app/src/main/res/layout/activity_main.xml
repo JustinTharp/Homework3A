@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.justin.homework3a.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lizard"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:onClick="lizardonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paper"
+        android:id="@+id/paperA"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:onClick="paperonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rock"
+        android:id="@+id/rockB"
+        android:layout_below="@+id/paperA"
+        android:layout_centerHorizontal="true"
+        android:onClick="rockonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paper"
+        android:id="@+id/paperB"
+        android:layout_below="@+id/rockB"
+        android:layout_centerHorizontal="true"
+        android:onClick="paperonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spock"
+        android:id="@+id/spockA"
+        android:layout_below="@+id/paperB"
+        android:layout_centerHorizontal="true"
+        android:onClick="spockonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rock"
+        android:id="@+id/rockA"
+        android:layout_above="@+id/rockB"
+        android:layout_toLeftOf="@+id/paperA"
+        android:layout_toStartOf="@+id/paperA"
+        android:onClick="rockonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scissors"
+        android:id="@+id/scissorsA"
+        android:layout_below="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:onClick="scissorsonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lizard"
+        android:id="@+id/lizardB"
+        android:layout_above="@+id/paperB"
+        android:layout_alignLeft="@+id/rockA"
+        android:layout_alignStart="@+id/rockA"
+        android:onClick="lizardonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rock"
+        android:id="@+id/rockC"
+        android:layout_below="@+id/rockB"
+        android:layout_toRightOf="@+id/rockB"
+        android:layout_toEndOf="@+id/rockB"
+        android:onClick="rockonClick"/>
+</RelativeLayout>
